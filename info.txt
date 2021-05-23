@@ -1,0 +1,47 @@
+
+1) <div class="project-explanation text blue"></div> 
+.project-explanation.text
+
+
+2) <div class="project-explanation">
+        <div class="text">
+            <span>blue</span>
+        </div>
+</div>
+
+.project-explanation .text
+
+
+
+3) <div class="project-explanation">
+        <div class="wrap">
+            <div class="text">blue</div>
+        </div>
+    </div>
+
+.project-explanation .text {color:blue;}
+
+
+4) <div class="project-explanation">
+
+        <div class="text">blue</div>
+
+        <div class="wrap">
+            <div class="text">black</div>
+        </div>       
+
+    </div>
+
+
+.project-explanation.text  {color:blue;}
+.project-explanation .text  {color:blue;}
+.project-explanation > .text  {color:blue;}
+
+.project-explanation.text.blue  {color:blue;}
+p.project-explanation.text span {color:blue;}
+.project-explanation > .text  {color:blue;}
+
+
+
+
+
