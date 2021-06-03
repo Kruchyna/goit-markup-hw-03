@@ -1,12 +1,14 @@
 
 :root{
     --main-text-color:#757575; 
+    --background-button-hero:#188CE8;
     --primary-white-color:#FFFFFF;
     --logo-black-color:#000000;
     --logo-blue-color:#2196F3;
     --title-black-color:#212121;
     --accent-text-color:#2196F3;
     --banner-color-background:#2F303A;
+    --background-filters-color:#F5F4FA;
     --color-rgb-footer:rgba(255, 255, 255, 0.6);
     --backgroud-card-border:#EEEEEE;
 }
@@ -130,7 +132,9 @@ padding-bottom: 26px;
 }
 
 .nav-list-item .link,
-.list-item .contacts {
+.list-item .contacts
+.list-item .contacts-portfolio
+ {
     display: flex;
     align-items: center;
     color: var(--title-black-color);
@@ -165,6 +169,10 @@ padding-bottom: 26px;
     text-decoration: none;
 }
 
+.list-item .contacts-portfolio {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
 
 .list-item{
     display: flex;
@@ -180,9 +188,14 @@ padding-bottom: 26px;
     margin-right: 0;
 }
 
-.list-item .contacts, .list-item.tel .contacts:hover,
-.list-item .contacts, .list-item.tel .contacts:focus{
-color: var(--accent-text-color);
+.list-item.mail .contacts:hover,
+.list-item.mail .contacts:focus{
+    color: var(--main-text-color);
+}
+
+.list-item.tel .contacts:hover,
+.list-item.tel .contacts:focus{
+    color: var(--accent-text-color);
 }
 
 
@@ -231,7 +244,6 @@ color: var(--accent-text-color);
     color: var(--primary-white-color);
     padding: 10px 32px;
     border-radius: 4px;
-    align-items: center;
     text-align: center;
     letter-spacing: 00.06em;
 }
@@ -272,7 +284,7 @@ color: var(--accent-text-color);
 }
 
 .button-container{
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     }
 
  
@@ -403,6 +415,7 @@ color: var(--accent-text-color);
     flex-basis: calc((100% - 120px) / 4);
     margin-top: 30px;
     margin-left: 30px;
+    
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -414,9 +427,9 @@ color: var(--accent-text-color);
 }
 
 .command-list.title{
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 10px;
-    padding-left: 80px;
     color: var(--title-black-color);
     font-weight: 500;
     font-size: 16px;
@@ -425,7 +438,7 @@ color: var(--accent-text-color);
  }
 
 .command-list.text{
-    padding-left: 80px;
+    justify-content: center;
     margin-top: 0;
     color: var(--main-text-color);
     font-size: 400;
@@ -464,6 +477,7 @@ color: var(--accent-text-color);
     border-right: 1px solid var(--backgroud-card-border);
     border-left: 1px solid var(--backgroud-card-border);
     box-sizing: border-box;
+    width: 370px;
     padding: 20px 24px;
     
 
@@ -552,6 +566,8 @@ color: var(--accent-text-color);
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+    margin-top: 0;
 
  } 
 
