@@ -189,13 +189,9 @@ padding-bottom: 26px;
     margin-right: 0;
 }
 
-.list-item.mail .contacts:hover,
-.list-item.mail .contacts:focus{
-    color: var(--main-text-color);
-}
 
-.list-item.tel .contacts:hover,
-.list-item.tel .contacts:focus{
+.list-item.mail .contacts, .list-item.tel .contacts:hover,
+.list-item.mail .contacts, .list-item.tel .contacts:focus{
     color: var(--accent-text-color);
 }
 
