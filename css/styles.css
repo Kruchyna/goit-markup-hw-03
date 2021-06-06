@@ -225,14 +225,9 @@ padding-bottom: 26px;
 
 }
 
-.button-flex{
-    display: flex;
-    justify-content: center;
-}
+
 
 .order-button{
-    display: flex;
-    align-items: center;
     min-width: 200px;
     height: 50px;
     font-size: 16px;
@@ -366,7 +361,7 @@ padding-bottom: 26px;
     margin-right: 30px;
  }
 
-.section-work .section-title{
+.section-work, .section-title{
     margin-top: 0;
     margin-bottom: 50px;
     padding-top: 0;
@@ -379,7 +374,7 @@ padding-bottom: 26px;
 
 .work-item{
     width: 370px;
-    height: 294px;
+    
 }
 
 /* ====== SECTION COMMAND====== */
@@ -478,7 +473,6 @@ padding-bottom: 26px;
     border-right: 1px solid var(--backgroud-card-border);
     border-left: 1px solid var(--backgroud-card-border);
     box-sizing: border-box;
-    width: 370px;
     padding: 20px 24px;
     
 
@@ -489,6 +483,7 @@ padding-bottom: 26px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin-bottom: 4px;
    
 }
 
@@ -504,6 +499,7 @@ padding-bottom: 26px;
 .portfolio-link{
     display: block;
     padding-top: 0;
+    
     
 }
 
